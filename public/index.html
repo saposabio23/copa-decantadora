@@ -14,17 +14,14 @@
          poster="media/video-poster.png"
          class="h-dvh w-screen bg-black object-cover">
     <source src="media/video.mp4" type="video/mp4" />
-    Sorry, your browser doesn't support embedded videos, but don't worry, you
-    can
-    <a href="media/video.mp4">download it</a>
-    and watch it with your favorite video player!
+    Su navegador no soporta los videos incrustados, pero puede <a href="media/video.mp4">descargarlo</a> para verlo en
+    su ordenador.
   </video>
 
-  <div class="bg-red-900">
-    <div class="container relative mx-auto flex max-w-[1800px] gap-5 p-5">
-      <div
-           class=" sticky top-5 box-content flex h-[calc(100vh-2.5rem)] w-1/4 max-h-[900px] flex-col rounded-lg
-       bg-gray-200">
+  <div class="bg-red-800">
+    <div class="container relative mx-auto lg:flex max-w-[1800px] gap-5 p-5 md:block lg:flex-row">
+      <div class="lg:sticky sm:hidden lg:flex top-5 box-content h-[calc(100vh-2.5rem)] lg:w-1/4 max-h-[900px] flex-col rounded-lg
+       bg-stone-200">
         <img
              src="media/frontal.jpg"
              alt=""
@@ -45,26 +42,30 @@
               <span>la pieza (IVA incluido)</span>
             </div>
 
-            <a
-               class="w-full cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white hover:bg-opacity-80">Comprar</a>
+            <a href="https://buy.stripe.com/test_00g8Ar2Au4q5b4I9AA"
+               class="w-full cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white hover:bg-opacity-60 transition">Comprar</a>
 
             <div class="flex w-full flex-col items-center gap-1">
-              <p class="text-xs">Métodos de pago aceptados:</p>
+              <p class="text-xs text-gray-500">Métodos de pago aceptados:</p>
               <div class="flex gap-2">
-                <div class="h-6 w-10 rounded-md bg-blue-400"></div>
-                <div class="h-6 w-10 rounded-md bg-blue-400"></div>
-                <div class="h-6 w-10 rounded-md bg-blue-400"></div>
-                <div class="h-6 w-10 rounded-md bg-blue-400"></div>
+                <img src="assets/icons/visa.png" alt=""
+                     class="h-6 w-10 rounded-md bg-gray-100 border border-gray-300 object-contain p-1">
+                <img src="assets/icons/mastercard.png" alt=""
+                     class="h-6 w-10 rounded-md bg-gray-100 border border-gray-300 object-contain p-1">
+                <img src="assets/icons/apple-pay.png" alt=""
+                     class="h-6 w-10 rounded-md bg-gray-100 border border-gray-300 object-contain p-1">
+                <img src="assets/icons/google-pay.png" alt=""
+                     class="h-6 w-10 rounded-md bg-gray-100 border border-gray-300 object-contain p-1">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col gap-5 w-3/4">
+      <div class="flex flex-col gap-5 md:w-full lg:w-3/4">
 
-        <div class="h-fit w-full bg-gray-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
-          <h3 class="text-4xl font-titles uppercase">Presentación</h3>
+        <div class="h-fit w-full bg-stone-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
+          <h3 class="text-3xl font-titles uppercase">Presentación</h3>
 
           <img src="media/decantador.JPG" class="w-9/12 max-w-xl rounded-lg mx-auto">
 
@@ -77,42 +78,47 @@
           <div class="flex gap-5">
             <div>
               <img src="media/explicacion-1.png" class="mb-2 rounded-lg">
-              <p>En el fondo del cáliz de la copa hay una abertura por el cual se filtran los posos del vino y se
+              <p class="px-2">En el fondo del cáliz de la copa hay una abertura por el cual se filtran los posos del
+                vino y se
                 depositan
                 en el pequeño decantador de la copa.</p>
             </div>
             <div>
               <img src="media/explicacion-2.png" class="mb-2 rounded-lg">
-              <p>Al inclinar la copa, el sistema de filtrado actúa de tal forma que no deja que el poso retorne al
+              <p class="px-2">Al inclinar la copa, el sistema de filtrado actúa de tal forma que no deja que el poso
+                retorne al
                 cuerpo
                 de
                 la copa.</p>
             </div>
             <div>
               <img src="media/explicacion-3.png" class="mb-2 rounded-lg">
-              <p>El vino permanece limpio para ser degustado.</p>
+              <p class="px-2">El vino permanece limpio para ser degustado.</p>
             </div>
           </div>
         </div>
 
 
-        <div class="h-fit w-full bg-gray-200 relative px-6 py-5 pb-10 rounded-lg flex gap-5 flex-col">
-          <h3 class="text-4xl font-titles uppercase">Galeria</h3>
+        <div class="h-fit w-full bg-stone-200 relative px-6 py-5 pb-10 rounded-lg flex gap-5 flex-col">
+          <h3 class="text-3xl font-titles uppercase">Galeria</h3>
 
-          <div class="main-carousel h-[80vh] max-h-900px"
-               data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": false, "autoPlay": true, "imagesLoaded": true, "prevNextButtons": true }'>
-            <div class="carousel-cell h-full" style="width: 80%; margin-right: 10px;"><img src="media/galeria-1.JPG"
+          <div class="main-carousel h-[80vh] max-h-[600px]"
+               data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": false, "autoPlay": true, "imagesLoaded": true, "prevNextButtons": true, "pauseAutoPlayOnHover": true }'>
+            <div class="carousel-cell h-full" style="max-width: 500px; margin-right: 10px;"><img
+                   src="media/galeria-1.JPG"
                    class="h-full w-full object-cover rounded-lg"></div>
-            <div class="carousel-cell h-full" style="width: 80%; margin-right: 10px;"><img src="media/galeria-2.JPG"
+            <div class="carousel-cell h-full" style="max-width: 500px; margin-right: 10px;"><img
+                   src="media/galeria-2.JPG"
                    class="h-full w-full object-cover rounded-lg"></div>
-            <div class="carousel-cell h-full" style="width: 80%; margin-right: 10px;"><img src="media/galeria-3.JPG"
+            <div class="carousel-cell h-full" style="max-width: 500px; margin-right: 10px;"><img
+                   src="media/galeria-3.JPG"
                    class="h-full w-full object-cover rounded-lg"></div>
           </div>
 
         </div>
 
-        <div class="h-fit w-full bg-gray-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
-          <h3 class="text-4xl font-titles uppercase">Especificaciones</h3>
+        <div class="h-fit w-full bg-stone-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
+          <h3 class="text-3xl font-titles uppercase">Especificaciones</h3>
 
           <div class="columns-2">
             <div>
@@ -146,8 +152,8 @@
           </div>
         </div>
 
-        <div class="h-fit w-full bg-gray-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
-          <h3 class="text-4xl font-titles uppercase">Contacto</h3>
+        <div class="h-fit w-full bg-stone-200 relative px-6 py-5 rounded-lg flex gap-5 flex-col">
+          <h3 class="text-3xl font-titles uppercase">Contacto</h3>
 
           <div class="columns-2">
             <div>
@@ -169,7 +175,7 @@
           <img src="media/logo-alzar.png" alt="" class="h-[100px] object-contain">
           <img src="media/logo-real.png" alt="" class="h-[100px] object-contain">
 
-          <div class="mx-auto max-w-72 text-center text-sm border rounded-lg bg-gray-300 p-4">
+          <div class="mx-auto max-w-72 text-center text-sm border rounded-lg bg-gray-100 py-3 px-4">
             <h4 class="font-bold">Patente registrada:</h4>
             <p>Número de solicitud: U202130459</p>
             <p>Titular: Jose Alberto Ortíz Cornejo</p>
@@ -177,7 +183,7 @@
             <p>Fecha de expedición: 29/07/2021</p>
           </div>
 
-          <p class="text-gray-500 text-center text-sm">Página web por <a href=""
+          <p class="text-gray-500 text-center text-xs">Página web por <a href=""
                class="underline hover:no-underline">Pablo Moreno</a></p>
 
 
