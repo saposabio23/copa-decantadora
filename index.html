@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Copa Decantadora Alzár</title>
+  <meta name="title" content="Copa Decantadora Alzár">
+  <meta name="description"
+        content="La Copa Alzár es una copa...">
+  <meta name="author" content="Pablo Moreno">
+  <meta name="keywords" content="copa, vino, decantadora, beber, lujo">
+  <link rel="canonical" href="https://alzarcopa.com">
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Links -->
+  <link href="assets/css/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/flickity.min.css" media="screen" />
+</head>
+
+<body class="bg-black">
+  <video
+         controls
+         poster="media/video-poster.png"
+         class="h-dvh w-screen bg-black object-cover relative">
+    <source src="media/video.mp4" type="video/mp4" />
+    Su navegador no soporta los videos incrustados, pero puede
+    <a href="media/video.mp4">descargarlo</a> para verlo en su ordenador.
+  </video>
+
+  <div id="comprarButton"
+       class="fixed bottom-3 left-3 box-border w-[calc(100vw-.75rem*2)] h-fit z-30 rounded-xl bg-black p-3 text-center text-lg text-white border border-neutral-800 uppercase lg:hidden cursor-pointer shadow-center">
+    Ir a comprar</div>
+
+  <div class="bg-red-900">
+    <div
+         class="container relative mx-auto max-w-[1800px] gap-5 p-0 pt-5 lg:p-5 pb-20 lg:pb-5 block lg:flex lg:flex-row">
+
+      <!-- PANEL -->
+      <div id="comprarPanel"
+           class="translate-y-full fixed top-0 left-0 z-50 box-content h-screen w-screen lg:translate-y-0 flex-col lg:rounded-xl bg-stone-200 lg:sticky lg:top-5 flex lg:h-[calc(100vh-2.5rem)] lg:max-h-[900px] lg:w-1/4 transition-all duration-500">
+
+        <div class="w-full bg-neutral-800 text-center p-3 pb-8 -mb-4 text-lg text-neutral-300 lg:hidden cursor-pointer"
+             id="closeButton">Cerrar
+        </div>
+
+        <div class="max-h-64 w-full bg-black rounded-t-2xl lg:rounded-t-xl shadow-center lg:shadow-inherit">
+          <img
+               src="media/frontal.jpg"
+               alt=""
+               class="object-cover max-h-64 m-auto rounded-t-xl" />
+
+        </div>
+
+        <div class="flex h-full flex-col justify-between p-5 relative ">
+
+          <div>
+            <h1 class="mb-2 font-titles text-4xl">COPA ALZÁR</h1>
+            <ul class="list-none text-base">
+              <li>⋄ Decantación en la copa</li>
+              <li>⋄ Cristal soplado a mano</li>
+              <li>⋄ Apto para lavavajillas</li>
+              <li>⋄ Capacidad 300 ml</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col text-center">
+              <span class="text-4xl font-bold">128€</span>
+              <span>la pieza (IVA incluido)</span>
+            </div>
+
+            <a
+               href="https://buy.stripe.com/test_00g8Ar2Au4q5b4I9AA"
+               class="w-full cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white transition hover:bg-opacity-60">Comprar</a>
+
+            <div class="flex w-full flex-col items-center gap-1">
+              <p class="text-xs text-gray-500">Métodos de pago aceptados:</p>
+              <div class="flex gap-2">
+                <img
+                     src="assets/icons/visa.png"
+                     alt=""
+                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                <img
+                     src="assets/icons/mastercard.png"
+                     alt=""
+                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                <img
+                     src="assets/icons/apple-pay.png"
+                     alt=""
+                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                <img
+                     src="assets/icons/google-pay.png"
+                     alt=""
+                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="flex flex-col gap-5 md:w-full lg:w-3/4">
+        <div
+             class="relative flex h-fit w-full flex-col gap-5 rounded-xl bg-stone-200 px-6 py-5">
+          <h3 class="font-titles text-3xl uppercase">Presentación</h3>
+
+          <img
+               src="media/decantador.jpg"
+               class="mx-auto w-full lg:w-9/12 max-w-xl rounded-xl" />
+
+          <p class="mx-auto max-w-2xl indent-5 text-lg first-letter:text-2xl first-letter:font-bold mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="flex gap-3 flex-col lg:flex-row">
+            <div class="bg-neutral-300 text-black rounded-xl pb-3 max-w-xl mx-auto">
+              <span class="text-2xl font-thin ml-1 absolute text-neutral-300">➀</span>
+              <img src="media/explicacion-1.jpg" class="mb-2 rounded-t-xl" />
+              <p class="px-4">
+                En el fondo del cáliz de la copa hay una abertura por el cual
+                se filtran los posos del vino y se depositan en el pequeño
+                decantador de la copa.
+              </p>
+            </div>
+            <div class="bg-neutral-300 text-black rounded-xl pb-3 max-w-xl mx-auto">
+              <span class="text-2xl font-thin ml-1 absolute text-neutral-300">➁</span>
+              <img src="media/explicacion-2.jpg" class="mb-2 rounded-t-xl" />
+              <p class="px-4">
+                Al inclinar la copa, el sistema de filtrado actúa de tal forma
+                que no deja que el poso retorne al cuerpo de la copa.
+              </p>
+            </div>
+
+            <div class="bg-neutral-300 text-black rounded-xl pb-3 max-w-xl mx-auto">
+              <span class="text-2xl font-thin ml-1 absolute text-neutral-300">➂</span>
+              <img src="media/explicacion-3.jpg" class="mb-2 rounded-t-xl" />
+              <p class="px-4">
+                El vino permanece limpio para ser degustado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+             class="relative flex h-fit w-full flex-col gap-5 rounded-xl bg-stone-200 px-6 py-5 pb-10">
+          <h3 class="font-titles text-3xl uppercase">Galeria</h3>
+
+          <div
+               class="main-carousel h-[80vh] max-h-[600px]"
+               data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": false, "autoPlay": true, "imagesLoaded": true, "prevNextButtons": true, "pauseAutoPlayOnHover": true }'>
+            <div
+                 class="carousel-cell h-full"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   src="media/galeria-1.jpg"
+                   class="h-full w-full rounded-xl object-cover" />
+            </div>
+            <div
+                 class="carousel-cell h-full"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   src="media/galeria-2.jpg"
+                   class="h-full w-full rounded-xl object-cover" />
+            </div>
+            <div
+                 class="carousel-cell h-full"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   src="media/galeria-3.jpg"
+                   class="h-full w-full rounded-xl object-cover" />
+            </div>
+            <div
+                 class="carousel-cell h-full"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   src="media/galeria-4.jpg"
+                   class="h-full w-full rounded-xl object-cover" />
+            </div>
+          </div>
+        </div>
+
+        <div
+             class="relative flex h-fit w-full flex-col gap-5 rounded-xl bg-stone-200 px-6 py-5">
+          <h3 class="font-titles text-3xl uppercase">Especificaciones</h3>
+
+          <div class="grid grid-cols-2 gap-5">
+            <div>
+              <h4 class="font-bold">Proveedor</h4>
+              <p>Real Fabrica de Cristales de La Granja (Segovia)</p>
+            </div>
+            <div>
+              <h4 class="font-bold">Color</h4>
+              <p>Transparente</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-5">
+            <div>
+              <h4 class="font-bold">Capacidad</h4>
+              <p>300ml</p>
+            </div>
+            <div>
+              <h4 class="font-bold">Material</h4>
+              <p>Cristal</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-5">
+            <div>
+              <h4 class="font-bold">Medidas</h4>
+              <p>00 × 00 × 00 cm</p>
+            </div>
+            <div>
+              <h4 class="font-bold">Peso</h4>
+              <p>000 g</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+             class="relative flex h-fit w-full flex-col gap-5 rounded-xl bg-stone-200 px-6 py-5">
+          <h3 class="font-titles text-3xl uppercase">Contacto</h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div>
+              <p><span class="font-bold">Jose Alberto Ortíz</span></p>
+              <p>
+                Calle 0000000<br />
+                39700 Castro-Urdiales
+              </p>
+            </div>
+            <div class="flex flex-col gap-4 lg:gap-2">
+              <br class="hidden lg:inline-block">
+              <p>
+                <span class="font-bold">☏ Téléfono</span>
+                <a href="tel:+3400000000"
+                   class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-red-900 hover:bg-opacity-60">+34
+                  000 00 00 00</a>
+              </p>
+              <p>
+                <span class="font-bold">✉︎ Mail</span>
+                <a href="mailto:00000000"
+                   class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-red-900 hover:bg-opacity-60">contacto@0000000.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-xl w-fit p-5 lg:p-10 lg:pt-10 lg:pb-5 gap-10 mx-auto">
+            <div class="flex justify-around gap-5 lg:gap-32 flex-col lg:flex-row">
+              <img
+                   src="media/logo-alzar.png"
+                   alt=""
+                   class="h-[100px] object-contain" />
+              <img
+                   src="media/logo-real.png"
+                   alt=""
+                   class="h-[100px] object-contain" />
+            </div>
+            <div
+                 class="mx-auto w-full max-w-72 text-center text-sm">
+              <h4 class="font-bold">Patente registrada:</h4>
+              <p>Número de solicitud: U202130459</p>
+              <p>Titular: Jose Alberto Ortíz Cornejo</p>
+              <p>Número de publicación: ES1266514</p>
+              <p>Fecha de expedición: 29/07/2021</p>
+            </div>
+
+          </div>
+
+
+
+          <p class="text-center text-xs text-gray-500">
+
+            <a href="https://pablo.energy" target="_blank"
+               class=" px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">
+              Página web por Pablo
+              Moreno</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/flickity.pkgd.min.js"></script>
+
+  <script>
+    const comprarButton = document.getElementById("comprarButton");
+    const comprarPanel = document.getElementById("comprarPanel");
+    const closeButton = document.getElementById("closeButton");
+
+    comprarButton.addEventListener("click", function () {
+      comprarPanel.classList.replace('translate-y-full', 'translate-y-0');
+    });
+
+    closeButton.addEventListener("click", function () {
+      comprarPanel.classList.replace('translate-y-0', 'translate-y-full');
+    });
+
+
+  </script>
+
+</body>
+
+</html>

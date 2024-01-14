@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Cochin";
+    src: url('../fonts/cochin-webfont.woff2') format('woff2'),
+        url('../fonts/cochin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer components {
+    .btn-main {
+        @apply bg-sky-600 hover:bg-sky-700 px-5 py-3 text-white rounded-lg;
+    }
+}
+
+/* .flickity-prev-next-button {
+    width: 30px !important;
+    height: 30px !important;
+} */

@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./assets/**/*.{html,js}, ./*.{html,js}"],
   theme: {
     extend: {},
     fontFamily: {
-      titles: ['Cochin', 'serif'],
+      titles: ["Serif", "serif"],
+    },
+    boxShadow: {
+      center: "0 0 20px 0 #e5e5e58a",
     },
   },
   plugins: [],
-  
-}
-
+};
