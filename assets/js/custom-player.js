@@ -31,13 +31,16 @@ function playPauseMedia() {
     controls.classList.remove("left-1/2");
     controls.classList.add("right-5");
     controls.classList.replace("top-1/2", "bottom-5");
-    // controls.classList.replace("absolute", "fixed");
     controls.classList.remove("-translate-y-1/2");
     controls.classList.remove("-translate-x-1/2");
     controls.classList.remove("-translate-x-1/2");
 
-    controls.classList.remove("lg:px-6");
-    controls.classList.remove("lg:py-5");
+    controls.classList.replace("px-6", "px-4");
+    controls.classList.replace("py-5", "py-3");
+    play.classList.replace("h-7", "h-5");
+    play.classList.replace("w-7", "w-5");
+    mute.classList.replace("h-7", "h-5");
+    mute.classList.replace("w-7", "w-5");
     controls.classList.add("opacity-60");
     document
       .getElementById("scrollArrow")
@@ -75,3 +78,7 @@ function muteMedia() {
 }
 
 mute.addEventListener("click", muteMedia);
+
+media.addEventListener("ended", function () {
+  media.load();
+});

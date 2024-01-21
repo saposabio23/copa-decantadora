@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      titles: ["Serif", "serif"],
+      titles: ["EB Garamond", "serif"],
     },
     boxShadow: {
       center: "0 0 10px 0 #e5e5e58a",

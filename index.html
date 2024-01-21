@@ -10,20 +10,20 @@
   <title>Copa Decantadora Alzar</title>
   <meta name="title" content="Copa Decantadora Alzár">
   <meta name="description"
-        content="La Copa Alzár es una copa...">
+        content="La Copa Alzar es única en el mundo, su sistema patentado fusiona una copa y un decantador.">
   <meta name="author" content="Pablo Moreno">
   <meta name="keywords" content="copa, vino, decantadora, beber, lujo">
   <link rel="canonical" href="https://copa-alzar.com">
 
   <!-- Favicon -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff"> -->
-  <link rel="shortcut icon" href="#">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Links -->
   <link href="assets/css/output.css" rel="stylesheet" />
@@ -32,15 +32,15 @@
 
 <body class="bg-black">
   <div class="player h-dvh w-full bg-black object-cover relative overflow-hidden z-40">
-    <video poster="media/frontal.jpg" playsinline class="h-full w-full object-cover">
+    <video poster="media/video-poster.png" playsinline class="h-full w-full object-cover">
       <source src="media/video.mp4" type="video/mp4" />
     </video>
     <div
-         class="controls left-1/2 top-1/2 w-fit -translate-x-1/2 -translate-y-1/2 absolute px-4 py-3 lg:px-6 lg:py-5 invisible flex items-center justify-around gap-5 rounded-full bg-neutral-300  text-neutral-50 bg-opacity-60 backdrop-blur-sm shadow-center transition-all hover:opacity-100">
-      <button class="play z-10 h-5 w-5 lg:h-7 lg:w-7 hover:opacity-60 transition-all"><img id="plays"
+         class="controls left-1/2 top-1/2 w-fit -translate-x-1/2 -translate-y-1/2 absolute px-6 py-5 invisible flex items-center justify-around gap-5 rounded-full bg-neutral-300  text-neutral-50 bg-opacity-60 backdrop-blur-sm shadow-center transition-all hover:opacity-100">
+      <button class="play z-10 h-7 w-7 md:h-7 md:w-7 hover:opacity-60 transition-all"><img id="plays"
              src="assets/icons/play.svg"
              alt="" class="h-full object-contain"></button>
-      <button class="mute z-10 h-5 w-5 lg:h-7 lg:w-7 hover:opacity-60 transition-all"><img id="sound"
+      <button class="mute z-10 h-7 w-7 md:h-7 md:w-7 hover:opacity-60 transition-all"><img id="sound"
              src="assets/icons/sound.svg"
              alt="" class="h-full object-contain"></button>
       <div
@@ -52,7 +52,7 @@
     <div class="left-1/2 -translate-x-1/2 bottom-5 absolute"
          onclick="scrollStart()"><span id="scrollArrow"
             class="p-2 lg:p-3 aspect-square flex items-center justify-center rounded-full bg-neutral-300 text-neutral-50 bg-opacity-70 cursor-pointer animate-bounce backdrop-blur-sm shadow-center hover:opacity-100"><img
-             src="assets/icons/arrow.svg" alt="" class="w-5 lg:w-6 hover:opacity-60 transition-all"></span></div>
+             src="assets/icons/arrow.svg" alt="" class="w-5 md:w-6 hover:opacity-60 transition-all"></span></div>
   </div>
 
 
@@ -66,7 +66,7 @@
 
       <!-- PANEL -->
       <div id="comprarPanel"
-           class="translate-y-full fixed top-0 left-0 z-50 box-content h-screen w-screen lg:translate-y-0 flex-col lg:rounded-xl bg-stone-200 lg:sticky lg:top-5 flex lg:h-[calc(100vh-2.5rem)] lg:max-h-[1200px] lg:w-1/4 transition-all duration-500">
+           class="translate-y-full fixed top-0 left-0 z-50 box-content h-screen w-screen lg:translate-y-0 flex-col lg:rounded-xl bg-stone-200 lg:sticky lg:top-5 flex lg:h-[calc(100lvh-2.5rem)] lg:max-h-[1200px] lg:w-1/4 transition-all duration-500">
 
         <div class="absolute top-2 right-2 aspect-square h-10 w-10 text-2xl flex items-center justify-center rounded-full bg-neutral-300 text-neutral-50 bg-opacity-50 backdrop-blur-sm shadow-center lg:hidden cursor-pointer"
              id="closeButton">✕
@@ -79,10 +79,10 @@
                class="object-cover m-auto rounded-t-xl max-h-44 lg:max-h-96" />
         </div>
 
-        <div class="flex h-full flex-col justify-between p-5 lg:p-5 relative lg:text-left md:text-center">
+        <div class="flex h-full flex-col justify-between p-3 lg:p-5 relative text-left">
 
           <div>
-            <h1 class="mb-2 font-titles text-3xl lg:text-4xl">COPA ALZAR</h1>
+            <h1 class="mb-3 font-titles text-4xl lg:text-5xl italic font-semibold">Copa Alzar</h1>
             <ul class="list-none">
               <li>⋄ Decantación en la copa</li>
               <li>⋄ Cristal soplado a mano</li>
@@ -99,7 +99,7 @@
 
             <a
                href="https://buy.stripe.com/test_00g8Ar2Au4q5b4I9AA"
-               class="w-full cursor-pointer rounded-lg bg-black p-3 text-center text-lg lg:text-xl font-bold text-white transition hover:bg-opacity-60">Comprar</a>
+               class="w-full cursor-pointer rounded-lg bg-black p-2 lg:p-3 text-center text-lg lg:text-xl font-bold text-white transition hover:bg-opacity-60">Comprar</a>
 
             <div class="flex w-full flex-col items-center gap-1">
               <p class="text-sm text-gray-500">Métodos de pago aceptados:</p>
@@ -107,19 +107,19 @@
                 <img
                      src="assets/icons/visa.png"
                      alt=""
-                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                     class="w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
                 <img
                      src="assets/icons/mastercard.png"
                      alt=""
-                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                     class="w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
                 <img
                      src="assets/icons/apple-pay.png"
                      alt=""
-                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                     class="w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
                 <img
                      src="assets/icons/google-pay.png"
                      alt=""
-                     class="h-6 w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
+                     class="w-10 rounded-md border border-gray-300 bg-gray-100 object-contain p-1" />
               </div>
             </div>
           </div>
@@ -129,22 +129,26 @@
       <!-- CONTENT -->
       <div class="flex flex-col gap-3 lg:gap-5 md:w-full lg:w-3/4">
         <div
-             class="relative flex h-fit w-full h-fit flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center lg:text-left">Presentación</h3>
+             class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
+          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Presentación</h3>
 
           <img
                src="media/foto8.jpg"
                class="mx-auto w-full lg:w-9/12 max-w-xl rounded-xl" />
           <p
              class="mx-auto max-w-2xl text-base lg:text-xl mb-5 text-center">
-            La <span class="font-bold">Copa Alzar</span> es única en el mundo, su sistema patentado fusiona
+            La <span class="font-titles italic font-semibold text-xl md:text-2xl">Copa Alzar</span> es única en el
+            mundo, su
+            sistema
+            patentado
+            fusiona
             una copa y un
             decantador. En él se
             recogen los posos del vino y podemos degustarlo directamente de la botella a la <span
-                  class="font-bold ">Copa Alzar</span>.
+                  class="font-titles italic font-semibold text-xl md:text-2xl">Copa Alzar</span>.
           </p>
 
-          <div class="flex gap-3 flex-col lg:flex-row mb-3">
+          <div class="flex gap-3 flex-col md:flex-row mb-3">
             <div class="bg-neutral-300 text-black rounded-xl pb-3 max-w-xl mx-auto">
               <span class="text-2xl ml-2 absolute text-neutral-300">➀</span>
               <img src="media/explicacion-1.jpg" class="mb-2 rounded-t-xl" />
@@ -173,9 +177,10 @@
           </div>
 
 
-          <img src="media/tradicional.jpg" alt="" class="rounded-lg object-cover w-full mx-auto max-w-lg relative">
+          <img src="media/tradicional.jpg" alt=""
+               class="rounded-lg object-cover w-full mx-auto max-w-lg relative hidden md:block">
 
-          <div class="flex gap-5 max-h-72 flex-col lg:flex-row relative">
+          <div class="flex gap-5 flex-col md:flex-row relative">
             <p class="indent-5 w-full">Tradicionalmente se
               utiliza un
               Decantador para
@@ -189,6 +194,9 @@
               Para ello lo
               primordial es conseguir una uva de gran calidad y, una vez en bodega, proceder a la elaboración más
               respetuosa que garantice la conservación de sus características originales de la fruta.</p>
+            <img src="media/tradicional.jpg" alt=""
+                 class="rounded-lg object-cover w-full mx-auto max-w-lg relative md:hidden">
+
             <p class="indent-5 w-full">Es por ello que muchos prefieren evitar
               clarificaciones y filtraciones que puedan afectar al resultado final, dejando asi, inevitablemente, estos
               famosos posos en el vino.
@@ -204,7 +212,7 @@
 
         <div
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5 pb-10 lg:pb-10">
-          <h3 class="font-titles text-3xl uppercase text-center lg:text-left">Galeria</h3>
+          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Galeria</h3>
 
           <div
                class="main-carousel h-[80vh] max-h-[600px]"
@@ -277,7 +285,7 @@
 
         <div
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center lg:text-left">Especificaciones</h3>
+          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Especificaciones</h3>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
@@ -313,7 +321,7 @@
 
         <div
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center lg:text-left">Contacto</h3>
+          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Contacto</h3>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-end align-bottom">
             <div>
@@ -324,13 +332,13 @@
               </p>
             </div>
             <div class="flex flex-col gap-4 lg:gap-2 justify-end">
-              <p class="flex flex-col md:flex-row gap-2 w-fit lg:text-left lg:block lg:gap-0">
+              <p class="flex flex-col md:flex-row gap-2 w-fit md:text-left lg:block lg:gap-0">
                 <span class="font-bold">☎️ Téléfono</span>
                 <a href="tel:+3400000000"
                    class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-red-900 hover:bg-opacity-60">+34
                   000 00 00 00</a>
               </p>
-              <p class="flex flex-col md:flex-row gap-2 w-fit lg:text-left lg:block lg:gap-0">
+              <p class="flex flex-col md:flex-row gap-2 w-fit md:text-left lg:block lg:gap-0">
                 <span class=" font-bold">📩 Mail</span>
                 <a href="mailto:00000000"
                    class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-red-900 hover:bg-opacity-60">contacto@0000000.com</a>
