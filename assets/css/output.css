@@ -727,8 +727,8 @@ video {
   height: 1.25rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-7 {
+  height: 1.75rem;
 }
 
 .h-\[100px\] {
@@ -756,14 +756,6 @@ video {
   height: 100vh;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
 .max-h-44 {
   max-height: 11rem;
 }
@@ -788,6 +780,10 @@ video {
   width: 1.25rem;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-\[calc\(100\%-\.75rem\*2\)\] {
   width: calc(100% - .75rem * 2);
 }
@@ -803,14 +799,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .max-w-2xl {
@@ -889,16 +877,8 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -1073,6 +1053,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1081,11 +1066,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .py-5 {
@@ -1139,6 +1119,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1154,24 +1139,14 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1479,12 +1454,6 @@ video {
   opacity: 0.6;
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -1498,16 +1467,16 @@ video {
     height: 1.75rem;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:w-6 {
+    width: 1.5rem;
   }
 
   .md\:w-7 {
     width: 1.75rem;
   }
 
-  .md\:w-6 {
-    width: 1.5rem;
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -1518,22 +1487,8 @@ video {
     flex-direction: row;
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 
   .md\:text-2xl {
@@ -1563,20 +1518,8 @@ video {
     display: none;
   }
 
-  .lg\:h-7 {
-    height: 1.75rem;
-  }
-
   .lg\:h-\[calc\(100vh-2\.5rem\)\] {
     height: calc(100vh - 2.5rem);
-  }
-
-  .lg\:h-\[calc\(100dvh-2\.5rem\)\] {
-    height: calc(100dvh - 2.5rem);
-  }
-
-  .lg\:h-\[calc\(100lvh-2\.5rem\)\] {
-    height: calc(100lvh - 2.5rem);
   }
 
   .lg\:max-h-96 {
@@ -1595,20 +1538,8 @@ video {
     width: 75%;
   }
 
-  .lg\:w-6 {
-    width: 1.5rem;
-  }
-
-  .lg\:w-7 {
-    width: 1.75rem;
-  }
-
   .lg\:w-9\/12 {
     width: 75%;
-  }
-
-  .lg\:w-10 {
-    width: 2.5rem;
   }
 
   .lg\:translate-y-0 {
@@ -1618,10 +1549,6 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
   }
 
   .lg\:gap-0 {
@@ -1657,16 +1584,6 @@ video {
     padding: 1.25rem;
   }
 
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -1683,13 +1600,14 @@ video {
     padding-top: 1.25rem;
   }
 
-  .lg\:text-left {
-    text-align: left;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-base {
@@ -1700,21 +1618,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:shadow-inherit {
