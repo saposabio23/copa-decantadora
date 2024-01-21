@@ -877,6 +877,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1011,6 +1015,54 @@ video {
 
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
+}
+
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
+}
+
+.bg-\[url\(\'media\/logo-alazar\.png\'\)\] {
+  background-image: url('media/logo-alazar.png');
+}
+
+.bg-\[url\(\'media\/logo-alzar\.png\'\)\] {
+  background-image: url('media/logo-alzar.png');
+}
+
+.bg-\[url\(\'\/media\/logo-alzar\.png\'\)\] {
+  background-image: url('/media/logo-alzar.png');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-\[length\:200px\] {
+  background-size: 200px;
+}
+
+.bg-\[length\:100px\] {
+  background-size: 100px;
+}
+
+.bg-\[length\:150px\] {
+  background-size: 150px;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-origin-content {
+  background-origin: content-box;
 }
 
 .object-contain {
@@ -1481,6 +1533,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-row {
