@@ -10,6 +10,8 @@ const timerBar = document.querySelector(".timer div");
 const plays = document.getElementById("plays");
 const sound = document.getElementById("sound");
 
+const poster = document.getElementById("poster");
+
 media.removeAttribute("controls");
 controls.style.visibility = "visible";
 
@@ -28,6 +30,8 @@ function playPauseMedia() {
   }
 
   if (clicked == false) {
+    poster.classList.replace("opacity-100", "opacity-0");
+
     controls.classList.remove("left-1/2");
     controls.classList.add("right-5");
     controls.classList.replace("top-1/2", "bottom-5");
@@ -37,10 +41,8 @@ function playPauseMedia() {
 
     controls.classList.replace("px-6", "px-4");
     controls.classList.replace("py-5", "py-3");
-    play.classList.replace("h-7", "h-5");
-    play.classList.replace("w-7", "w-5");
-    mute.classList.replace("h-7", "h-5");
-    mute.classList.replace("w-7", "w-5");
+    play.classList.replace("size-7", "size-5");
+    mute.classList.replace("size-7", "size-5");
     controls.classList.add("opacity-60");
     document
       .getElementById("scrollArrow")

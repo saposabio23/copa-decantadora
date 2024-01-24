@@ -35,15 +35,16 @@
 
 <body class="bg-black">
   <div class="player h-dvh w-full bg-black object-cover relative overflow-hidden z-40">
-    <video poster="media/video-poster.png" playsinline class="h-full w-full object-cover">
+    <video playsinline class="h-full w-full object-cover z-10">
       <source src="media/video.mp4" type="video/mp4" />
     </video>
+
     <div
-         class="controls left-1/2 top-1/2 w-fit -translate-x-1/2 -translate-y-1/2 absolute px-6 py-5 invisible flex items-center justify-around gap-5 rounded-full bg-neutral-300  text-neutral-50 bg-opacity-60 backdrop-blur-sm shadow-center transition-all hover:opacity-100">
-      <button class="play z-10 h-7 w-7 md:h-7 md:w-7 hover:opacity-60 transition-all"><img id="plays"
+         class="controls left-1/2 top-1/2 w-fit -translate-x-1/2 -translate-y-1/2 absolute px-6 py-5 invisible flex items-center justify-around gap-5 rounded-full bg-neutral-300  text-neutral-50 bg-opacity-60 backdrop-blur-sm shadow-center transition-all hover:opacity-100 z-20">
+      <button class="play z-20 size-7 md:size-7 hover:opacity-60 transition-all"><img id="plays"
              src="assets/icons/play.svg"
              alt="" class="h-full object-contain"></button>
-      <button class="mute z-10 h-7 w-7 md:h-7 md:w-7 hover:opacity-60 transition-all"><img id="sound"
+      <button class="mute z-20 size-7 md:size-7 hover:opacity-60 transition-all"><img id="sound"
              src="assets/icons/sound.svg"
              alt="" class="h-full object-contain"></button>
       <div
@@ -52,10 +53,15 @@
       </div>
     </div>
 
-    <div class="left-1/2 -translate-x-1/2 bottom-5 absolute"
+    <div class="left-1/2 -translate-x-1/2 bottom-5 absolute z-20"
          onclick="scrollStart()"><span id="scrollArrow"
             class="p-2 lg:p-3 aspect-square flex items-center justify-center rounded-full bg-neutral-300 text-neutral-50 bg-opacity-70 cursor-pointer animate-bounce backdrop-blur-sm shadow-center hover:opacity-100"><img
-             src="assets/icons/arrow.svg" alt="" class="w-5 md:w-6 hover:opacity-60 transition-all"></span></div>
+             src="assets/icons/arrow.svg" alt="" class="w-5 md:w-6 hover:opacity-60 transition-all"></span>
+    </div>
+
+    <img id="poster" src="media/video-poster.png" alt=""
+         class="h-full w-full absolute top-0 left-0 z-10 object-cover transition-all duration-500 opacity-100">
+
   </div>
 
 
@@ -86,7 +92,7 @@
              class="flex h-full flex-col justify-between p-3 lg:p-5 relative text-left ">
 
           <div>
-            <h1 class="mb-3 font-titles text-4xl lg:text-5xl italic font-semibold">Copa Alzar</h1>
+            <h1 class="mb-3 font-titles text-4xl xl:text-5xl italic font-semibold text-center">Copa Alzar</h1>
             <ul class="list-none">
               <li>⋄ Decantación en la copa</li>
               <li>⋄ Cristal soplado a mano</li>
@@ -135,7 +141,7 @@
         <div
              id="presentacion"
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Presentación</h3>
+          <h3 class="font-titles text-3xl uppercase font-semibold text-center md:text-left">Presentación</h3>
 
           <img
                src="media/foto8.jpg"
@@ -184,42 +190,52 @@
 
         <div id="soplado"
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5 pb-10 lg:pb-10">
-          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Soplado a manos</h3>
+          <h3 class="font-titles text-3xl uppercase  font-semibold text-center md:text-left">Fabricación artesanal</h3>
 
-          <img src="media/tradicional.jpg" alt=""
-               class="rounded-lg object-cover w-full mx-auto max-w-lg relative hidden md:block">
 
           <div class="flex gap-5 flex-col md:flex-row relative">
-            <p class="indent-5 w-full">Tradicionalmente se
-              utiliza un
-              Decantador para
-              separar los posos y airear el
-              vino, la
-              forma de realizarlo
-              es transvasar el vino al decantador y de ahí servirlo en las copas. Cada vez son más los enólogos que
+            <img src="media/tradicional.jpg" alt=""
+                 class="rounded-lg object-cover w-full mx-auto max-w-lg relative">
+
+            <div class="flex gap-2 flex-col w-full">
+              <p class="indent-5 w-full">Tradicionalmente se
+                utiliza un
+                Decantador para
+                separar los posos y airear el
+                vino, la
+                forma de realizarlo
+                es transvasar el vino al decantador y de ahí servirlo en las copas.</p>
+              <p></p>
+              Cada vez son más los enólogos que
               quieren transmitir una personalidad única en
               sus
               vinos.
               Para ello lo
               primordial es conseguir una uva de gran calidad y, una vez en bodega, proceder a la elaboración más
-              respetuosa que garantice la conservación de sus características originales de la fruta.</p>
-            <img src="media/tradicional.jpg" alt=""
-                 class="rounded-lg object-cover w-full mx-auto max-w-lg relative md:hidden">
+              respetuosa que garantice la conservación de sus características originales de la fruta.
+              </p>
+              <p class="indent-5 w-full">Es por ello que muchos prefieren evitar
+                clarificaciones y filtraciones que puedan afectar al resultado final, dejando asi, inevitablemente,
+                estos
+                famosos posos en el vino.
+                Los posos son, nada más y nada menos, que los depósitos de levaduras residuales y otras particular que
+                se
+                precipitan al fondo de la botella, por lo que son muy comunes en vinos que han tenido un tiempo de
+                crianza
+                largo.</p>
+            </div>
 
-            <p class="indent-5 w-full">Es por ello que muchos prefieren evitar
-              clarificaciones y filtraciones que puedan afectar al resultado final, dejando asi, inevitablemente, estos
-              famosos posos en el vino.
-              Los posos son, nada más y nada menos, que los depósitos de levaduras residuales y otras particular que se
-              precipitan al fondo de la botella, por lo que son muy comunes en vinos que han tenido un tiempo de crianza
-              largo.</p>
           </div>
-          <img src="media/foto2.jpg" alt="" class="rounded-lg object-cover w-fit mx-auto max-h-80 relative">
+
+
+
+
 
         </div>
 
         <div id="galeria"
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5 pb-10 lg:pb-10">
-          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Galeria</h3>
+          <h3 class="font-titles text-3xl uppercase font-semibold text-center md:text-left">Galeria</h3>
 
           <div
                class="main-carousel h-[80vh] max-h-[600px]"
@@ -293,7 +309,7 @@
         <div
              id="especificaciones"
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Especificaciones</h3>
+          <h3 class="font-titles text-3xl uppercase font-semibold text-center md:text-left">Especificaciones</h3>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
@@ -330,15 +346,15 @@
         <div
              id="contacto"
              class="relative flex h-fit w-full flex-col gap-4 lg:gap-5 rounded-xl bg-stone-200 p-4 lg:p-5">
-          <h3 class="font-titles text-3xl uppercase text-center md:text-left">Contacto</h3>
+          <h3 class="font-titles text-3xl uppercase font-semibold text-center md:text-left">Contacto</h3>
 
           <!-- <p><span class="text-xl italic">Alazne Ballester Serrano</span></p> -->
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
             <p class="flex flex-row gap-2 w-fit justify-center items-center">
-              <span class="font-bold">☎️ Téléfono:</span>
+              <span class="font-bold">☎️ Téléfonos:</span>
               <a href="tel:+34665705496"
-                 class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">665
+                 class=" px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">665
                 70 54 96</a>
               <a href="tel:+34665705498"
                  class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">665
@@ -347,21 +363,18 @@
             <p class="flex flex-row gap-2 w-fit justify-center items-center">
               <span class="font-bold">📩 Email:</span>
               <a href="mailto:contacto@copa-alzar.com?subject=Contacto desde la www.copa-alzar.com"
-                 class="ml-1 px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">contacto@copa-alzar.com</a>
+                 class=" px-2 py-1 bg-neutral-300 rounded-lg transition border border-transparent hover:border-neutral-400 hover:bg-opacity-60">contacto@copa-alzar.com</a>
             </p>
           </div>
 
-          <div class="flex flex-col rounded-xl w-fit p-5 lg:pt-10 lg:pb-5 gap-10 mx-auto">
-            <div class="flex justify-around gap-5 lg:gap-32 flex-col lg:flex-row">
-              <img
-                   src="media/logo-alzar.png"
-                   alt=""
-                   class="h-[100px] object-contain" />
-              <img
-                   src="media/logo-real.png"
-                   alt=""
-                   class="h-[100px] object-contain" />
-            </div>
+          <hr class="border-neutral-300 mt-3 mb-3">
+
+          <div class="grid grid-cols-1 md:grid-cols-3 w-full gap-5 items-center justify-center">
+            <img
+                 src="media/logo-alzar.png"
+                 alt=""
+                 class="h-[100px] object-contain w-fit mx-auto" />
+
             <div
                  class="mx-auto w-full max-w-72 text-center text-sm lg:text-md">
               <h4 class="font-bold">Patente registrada:</h4>
@@ -370,9 +383,13 @@
               <p>Número de publicación: ES1266514</p>
               <p>Fecha de expedición: 29/07/2021</p>
             </div>
-
+            <img
+                 src="media/logo-real.png"
+                 alt=""
+                 class="h-[100px] object-contain w-fit mx-auto" />
           </div>
 
+          <hr class="border-neutral-300 mt-3 mb-3">
 
 
           <p class="text-center text-xs text-gray-500">
