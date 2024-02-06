@@ -130,4 +130,7 @@ document.addEventListener("keydown", function (event) {
   if (event.code === "Escape") {
     screen.src = "assets/icons/full.svg";
   }
+  if (event.code === "F") {
+    launchIntoFullscreen(document.querySelector(".player"));
+  }
 });
