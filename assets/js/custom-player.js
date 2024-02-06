@@ -3,12 +3,14 @@ const controls = document.querySelector(".controls");
 
 const play = document.querySelector(".play");
 const mute = document.querySelector(".mute");
+const fscreen = document.querySelector(".fscreen");
 
 const timerWrapper = document.querySelector(".timer");
 const timerBar = document.querySelector(".timer div");
 
 const plays = document.getElementById("plays");
 const sound = document.getElementById("sound");
+const screen = document.getElementById("screen");
 
 const poster = document.getElementById("poster");
 
@@ -33,8 +35,8 @@ function playPauseMedia() {
     poster.classList.replace("opacity-100", "opacity-0");
 
     controls.classList.remove("left-1/2");
-    controls.classList.add("right-5");
-    controls.classList.replace("top-1/2", "bottom-5");
+    controls.classList.add("right-3");
+    controls.classList.replace("top-1/2", "bottom-3");
     controls.classList.remove("-translate-y-1/2");
     controls.classList.remove("-translate-x-1/2");
     controls.classList.remove("-translate-x-1/2");
@@ -83,4 +85,49 @@ mute.addEventListener("click", muteMedia);
 
 media.addEventListener("ended", function () {
   media.load();
+});
+
+function goFullscreen() {
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+  if (fullscreenElement) {
+    exitFullscreen();
+  } else {
+    launchIntoFullscreen(document.querySelector(".player"));
+  }
+}
+
+function launchIntoFullscreen(element) {
+  screen.src = "assets/icons/nofull.svg";
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+function exitFullscreen() {
+  screen.src = "assets/icons/full.svg";
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}
+
+fscreen.addEventListener("click", goFullscreen);
+
+document.addEventListener("keydown", function (event) {
+  if (event.code === "Escape") {
+    screen.src = "assets/icons/full.svg";
+  }
 });
