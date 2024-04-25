@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.flickity-prev-next-button {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.flickity-page-dots .dot {
+    width: 6px !important;
+    height: 6px !important;
+}
+
 @font-face {
     font-family: "Cochin";
     src: url('../fonts/cochin-webfont.woff2') format('woff2'),

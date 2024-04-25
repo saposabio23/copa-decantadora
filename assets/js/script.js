@@ -13,38 +13,21 @@ const sound = document.getElementById("sound");
 const screen = document.getElementById("screen");
 
 const poster = document.getElementById("poster");
+const scrollArrow = document.getElementById("scrollArrow");
 
 media.removeAttribute("controls");
 controls.style.visibility = "visible";
 
-clicked = false;
-console.log(clicked);
+var isPlayed = false;
 
 function reduceControls() {
+  isPlayed = true;
   poster.classList.replace("opacity-100", "opacity-0");
-
-  controls.classList.remove("left-1/2");
-  controls.classList.add("right-3");
-  controls.classList.replace("top-1/2", "bottom-3");
-  controls.classList.remove("-translate-y-1/2");
-  controls.classList.remove("-translate-x-1/2");
-  controls.classList.remove("-translate-x-1/2");
-
-  controls.classList.replace("px-5", "px-4");
-  controls.classList.replace("py-4", "py-3");
-  controls.classList.replace("md:px-6", "px-4");
-  controls.classList.replace("md:py-5", "py-3");
-  play.classList.replace("size-7", "size-5");
-  mute.classList.replace("size-7", "size-5");
-  play.classList.replace("md:size-7", "md:size-6");
-  mute.classList.replace("md:size-7", "md:size-6");
-  fscreen.classList.replace("md:size-7", "md:size-6");
-  controls.classList.add("opacity-60");
-  document
-    .getElementById("scrollArrow")
-    .classList.replace("animate-bounce", "opacity-60");
-  clicked = true;
-  console.log(clicked);
+  scrollArrow.classList.replace("opacity-100", "opacity-60");
+  playPauseMedia();
+  setTimeout(function () {
+    poster.classList.add("hidden");
+  }, 1000);
 }
 
 function playPauseMedia() {
@@ -55,10 +38,6 @@ function playPauseMedia() {
     plays.src = "assets/icons/play.svg";
     media.pause();
   }
-
-  if (clicked == false) {
-    reduceControls();
-  }
 }
 
 play.addEventListener("click", playPauseMedia);
@@ -66,6 +45,7 @@ play.addEventListener("click", playPauseMedia);
 function stopMedia() {
   media.pause();
   media.currentTime = 0;
+  isPlaying = false;
 }
 media.addEventListener("ended", stopMedia);
 
@@ -88,7 +68,22 @@ function muteMedia() {
 mute.addEventListener("click", muteMedia);
 
 media.addEventListener("ended", function () {
-  media.load();
+  poster.classList.replace("opacity-0", "opacity-100");
+  poster.classList.remove("hidden");
+});
+
+window.addEventListener("scroll", function () {
+  console.log(isPlayed);
+  if (window.scrollY > (window.innerHeight / 100) * 70) {
+    media.pause();
+    plays.src = "assets/icons/play.svg";
+  } else if (
+    isPlayed == true &&
+    window.scrollY < (window.innerHeight / 100) * 30
+  ) {
+    media.play();
+    plays.src = "assets/icons/pause.svg";
+  }
 });
 
 // GOING FULLSCREEN
@@ -107,6 +102,9 @@ function goFullscreen() {
 
 function launchIntoFullscreen(element) {
   screen.src = "assets/icons/nofull.svg";
+  document
+    .getElementById("scrollArrow")
+    .classList.replace("opacity-60", "opacity-0");
   if (element.requestFullscreen) {
     element.requestFullscreen();
   } else if (element.mozRequestFullScreen) {
@@ -127,6 +125,9 @@ function exitFullscreen() {
   } else if (document.webkitExitFullscreen) {
     document.webkitExitFullscreen();
   }
+  document
+    .getElementById("scrollArrow")
+    .classList.replace("opacity-0", "opacity-60");
 }
 
 fscreen.addEventListener("click", goFullscreen);
@@ -183,4 +184,3 @@ comprarButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   comprarPanel.classList.replace("translate-y-0", "translate-y-full");
 });
-
