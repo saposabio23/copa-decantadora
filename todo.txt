@@ -1,2 +1,3 @@
+* Alt texto en las imágenes
 
 * Que poner en el botón móvil de abajo?
