@@ -8,7 +8,6 @@ module.exports = {
     },
     boxShadow: {
       center: "0 0 10px 0 #e5e5e58a",
-      red: "0 0 10px 0 #ba1b1b",
     },
   },
   plugins: [],
