@@ -104,7 +104,7 @@ function launchIntoFullscreen(element) {
   screen.src = "assets/icons/nofull.svg";
   document
     .getElementById("scrollArrow")
-    .classList.replace("opacity-60", "opacity-0");
+    .classList.replace("opacity-100", "opacity-0");
   if (element.requestFullscreen) {
     element.requestFullscreen();
   } else if (element.mozRequestFullScreen) {
@@ -127,7 +127,7 @@ function exitFullscreen() {
   }
   document
     .getElementById("scrollArrow")
-    .classList.replace("opacity-0", "opacity-60");
+    .classList.replace("opacity-0", "opacity-100");
 }
 
 fscreen.addEventListener("click", goFullscreen);
