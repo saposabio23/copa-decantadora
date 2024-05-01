@@ -785,8 +785,12 @@ video {
   max-height: 600px;
 }
 
-.min-h-\[40vh\] {
-  min-height: 40vh;
+.max-h-\[30vh\] {
+  max-height: 30vh;
+}
+
+.min-h-\[30vh\] {
+  min-height: 30vh;
 }
 
 .w-0 {
@@ -883,6 +887,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {
