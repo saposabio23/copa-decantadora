@@ -70,6 +70,7 @@ mute.addEventListener("click", muteMedia);
 media.addEventListener("ended", function () {
   poster.classList.replace("opacity-0", "opacity-100");
   poster.classList.remove("hidden");
+  scrollStart()
 });
 
 window.addEventListener("scroll", function () {
@@ -184,3 +185,29 @@ comprarButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   comprarPanel.classList.replace("translate-y-0", "translate-y-full");
 });
+
+
+// SLIDEWHOW PREVIEW
+const imgElement = document.getElementById('slideshow-image');
+const images = ['galeria-2.webp', 'foto1.webp', 'copa-photo-frontal-2.webp', 'galeria-4.webp', 'frontal2.webp']; // List of image sources
+let currentIndex = 0;
+
+function changeImage() {
+  // Fade out
+  imgElement.classList.remove('show');
+
+  setTimeout(() => {
+    // Change the image source after fade out
+    currentIndex = (currentIndex + 1) % images.length;
+    imgElement.src = "media/" + images[currentIndex];
+
+    // Fade in
+    imgElement.classList.add('show');
+  }, 1000); // Match this delay with the fade out transition time (1 second)
+}
+
+// Initial fade in
+imgElement.classList.add('show');
+
+// Change image every 10 seconds
+setInterval(changeImage, 5000);

@@ -3,5 +3,9 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "browserslist": "^4.23.3",
+    "caniuse-lite": "^1.0.30001651"
   }
 }
