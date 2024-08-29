@@ -187,27 +187,27 @@ closeButton.addEventListener("click", function () {
 });
 
 
-// SLIDEWHOW PREVIEW
-const imgElement = document.getElementById('slideshow-image');
-const images = ['galeria-2.webp', 'foto1.webp', 'copa-photo-frontal-2.webp', 'galeria-4.webp', 'frontal2.webp']; // List of image sources
-let currentIndex = 0;
+// // SLIDEWHOW PREVIEW
+// const imgElement = document.getElementById('slideshow-image');
+// const images = ['galeria-2.webp', 'foto1.webp', 'copa-photo-frontal-2.webp', 'galeria-4.webp', 'frontal2.webp']; // List of image sources
+// let currentIndex = 0;
 
-function changeImage() {
-  // Fade out
-  imgElement.classList.remove('show');
+// function changeImage() {
+//   // Fade out
+//   imgElement.classList.remove('show');
 
-  setTimeout(() => {
-    // Change the image source after fade out
-    currentIndex = (currentIndex + 1) % images.length;
-    imgElement.src = "media/" + images[currentIndex];
+//   setTimeout(() => {
+//     // Change the image source after fade out
+//     currentIndex = (currentIndex + 1) % images.length;
+//     imgElement.src = "media/" + images[currentIndex];
 
-    // Fade in
-    imgElement.classList.add('show');
-  }, 1000); // Match this delay with the fade out transition time (1 second)
-}
+//     // Fade in
+//     imgElement.classList.add('show');
+//   }, 1000); // Match this delay with the fade out transition time (1 second)
+// }
 
-// Initial fade in
-imgElement.classList.add('show');
+// // Initial fade in
+// imgElement.classList.add('show');
 
-// Change image every 10 seconds
-setInterval(changeImage, 5000);
+// // Change image every 10 seconds
+// setInterval(changeImage, 5000);
