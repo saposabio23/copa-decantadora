@@ -773,6 +773,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .max-h-\[600px\] {
   max-height: 600px;
 }
@@ -1022,8 +1026,36 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
+.bg-opacity-100 {
+  --tw-bg-opacity: 1;
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'media\/copa-mesa-3\.jpeg\'\)\] {
+  background-image: url('media/copa-mesa-3.jpeg');
+}
+
+.bg-\[url\(\'\/media\/copa-mesa-3\.jpeg\'\)\] {
+  background-image: url('/media/copa-mesa-3.jpeg');
+}
+
+.bg-\[url\(\'\/media\/copa-photo-frontal\.webp\'\)\] {
+  background-image: url('/media/copa-photo-frontal.webp');
+}
+
+.bg-\[url\(\'\/media\/copa-frotal-sola\'\)\] {
+  background-image: url('/media/copa-frotal-sola');
+}
+
+.bg-\[url\(\'\/media\/copa-frotal-sola\.jpeg\'\)\] {
+  background-image: url('/media/copa-frotal-sola.jpeg');
+}
+
+.bg-\[url\(\'\/media\/frontal2\.webp\'\)\] {
+  background-image: url('/media/frontal2.webp');
 }
 
 .from-red-700 {
@@ -1034,6 +1066,18 @@ video {
 
 .to-red-950 {
   --tw-gradient-to: #450a0a var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .object-contain {
@@ -1238,6 +1282,10 @@ video {
   opacity: 0.6;
 }
 
+.opacity-20 {
+  opacity: 0.2;
+}
+
 .shadow-center {
   --tw-shadow: 0 0 10px 0 #e5e5e58a;
   --tw-shadow-colored: 0 0 10px 0 var(--tw-shadow-color);
@@ -1438,8 +1486,20 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:relative {
     position: relative;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-1\/2 {
