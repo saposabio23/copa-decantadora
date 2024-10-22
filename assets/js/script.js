@@ -22,6 +22,7 @@ var isPlayed = false;
 
 function reduceControls() {
   isPlayed = true;
+  controls.classList.replace("opacity-0", "opacity-100");
   poster.classList.replace("opacity-100", "opacity-0");
   scrollArrow.classList.replace("opacity-100", "opacity-60");
   playPauseMedia();

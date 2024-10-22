@@ -47,33 +47,44 @@
        h-[calc(100svh)] bg-black ">
 
     <div id="poster"
-         class="flex absolute top-0 left-0 z-30 flex-col justify-center gap-3 md:gap-3 items-center p-6 w-full h-[calc(100svh)] opacity-100 transition-all duration-700 md:flex-row">
+         class="absolute top-0 left-0 z-30 w-full h-[calc(100svh)] opacity-100 transition-all duration-700">
 
-      <div class="flex flex-col text-center items-center gap-4 md:gap-6 z-20">
-        <img src="media/logo-alzar-blanco.png" alt="" class="h-28">
-        <h1
-            class="text-4xl italic  text-white md:text-7xl font-titles">
-          Copa Alzar</h1>
-        <p class=" max-w-[450px] md:text-xl  text-white text-sm">Única en el
-          mundo, su sistema patentado fusiona copa y decantador
-          en un diseño muy especial.</p>
-        <span
-              class="px-3 py-1 bg-opacity-60 rounded-full transition-all w-fit h-fit bg-neutral-300 text-neutral-50 hover:opacity-60 shadow-center hover:cursor-pointer backdrop-blur-sm"
-              onclick="reduceControls()">Video de presentación ▶︎</span>
-      </div>
-      <div
-           class="absolute top-0 left-0  w-full h-full opacity-60 bg-black z-10"> </div>
 
       <div
-           class="md:hidden absolute top-0 left-0 w-full h-full z-0 bg-[url('/media/copa-frotal-sola.jpeg')] bg-cover	bg-center	bg-opacity-100">
+           class="hidden md:block w-full h-full z-0 bg-[url('/media/fondo-desktop.png')]	bg-center	bg-opacity-100 bg-cover bg-no-repeat">
       </div>
+
+
       <div
-           class="hidden md:block absolute top-0 left-0 w-full h-full z-0 bg-[url('/media/copa-mesa-3.jpeg')] bg-cover	bg-center	bg-opacity-100">
+           class="md:hidden block w-full h-[70vh] z-0 bg-[url('/media/frontal2.webp')]	bg-center	bg-opacity-100 bg-cover bg-no-repeat">
       </div>
+
+      <div
+
+           class="flex flex-col gap-4 md:gap-6 z-20 absolute md:bottom-4 md:left-4 md:p-6 bottom-3 left-3 p-3 box-border text-white text-center bg-black bg-opacity-25 backdrop-blur-md rounded-2xl w-[calc(100%-24px)] md:w-fit">
+        <div class="flex  gap-3 items-start">
+          <img src="media/firma-blanca.png" alt="" class="md:h-[70px] h-[40px] w-auto object-contain">
+          <h1
+              class="text-4xl italic  md:text-7xl font-titles">
+            Copa Alzar</h1>
+        </div>
+
+        <div class="flex flex-col gap-4 justify-start">
+          <p class=" max-w-[450px] md:text-xl text-base text-left">Única en el
+            mundo, su sistema patentado fusiona copa y decantador
+            en un diseño muy especial.</p>
+          <span
+                class="rounded-full transition-all w-fit h-fit bg-red-700 p-2 md:p-2 md:px-4 bg-opacity-70 opacity-100 backdrop-blur-md hover:opacity-60 shadow-center hover:cursor-pointer "
+                onclick="reduceControls()">Video de presentación ▶︎</span>
+        </div>
+      </div>
+
+
+
     </div>
 
     <div
-         class="flex absolute right-3 bottom-5 invisible z-20 gap-3 justify-around items-center px-3 py-2 bg-opacity-60 rounded-full opacity-100 backdrop-blur-sm transition-all controls w-fit md:px-4 md:py-3 bg-neutral-300 text-neutral-50 shadow-center">
+         class="flex absolute right-3 bottom-5 invisible z-20 gap-3 justify-around items-center px-3 py-2 bg-opacity-60 rounded-full opacity-0 backdrop-blur-sm transition-all controls w-fit md:px-4 md:py-3 bg-neutral-300 text-neutral-50 shadow-center ">
       <button loading="lazy" class="z-20 transition-all play size-5 "><img id="plays"
              src="assets/icons/play.svg"
              alt="Botón para parar o reanudar el video de presentación"
@@ -100,19 +111,19 @@
 
 
 
-    <div class="absolute bottom-5 left-1/2 z-40 transition-all -translate-x-1/2 hover:opacity-60"
+    <div class="absolute md:bottom-5 md:left-1/2 right-6 bottom-6 z-40 transition-all md:-translate-x-1/2 hover:opacity-60 w-10"
          onclick="scrollStart()"><span id="scrollArrow"
-            class="flex justify-center items-center p-2 md:p-3 bg-opacity-70 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-neutral-700 text-neutral-50 shadow-center"><img
+            class="flex justify-center items-center p-2 md:p-3 bg-opacity-70 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-neutral-700 text-neutral-200 shadow-center"><img
              src="assets/icons/arrow.svg" alt="Flecha hacia abajo para desplazarse al contenido de la página"
              class="w-5 transition-all"></span>
     </div>
-
+    º
   </div>
 
 
   <div
        class="fixed bottom-0 left-0 box-border w-screen h-fit z-30 rounded-t-xl bg-stone-200 text-black lg:hidden flex items-center justify-between shadow-center overflow-hidden border-none shadow-neutral-400 p-2 md:p-4 gap-4">
-    <img src="media/copa-photo-frontal.webp"
+    <img src="media/copa-frotal-sola.jpeg"
          alt="Dos copas muy elegantes tomadas frontalmente sobre un fondo grisaceo"
          class="h-[50px] aspect-square bg-neutral-800 object-cover rounded-lg">
     <div class="w-full h-full  flex items-center justify-between ">
@@ -127,7 +138,7 @@
 
       <div
            id="comprarButton"
-           class="px-2 py-1 w-fi h-fit text-lg font-bold text-white bg-red-700 rounded-lg transition cursor-pointer flex items-center justify-center">
+           class="px-2 py-1 w-fit h-fit text-lg font-bold text-white bg-red-700 rounded-lg transition cursor-pointer flex items-center justify-center">
         Adquirir</div>
 
     </div>
@@ -141,11 +152,11 @@
       <div id="comprarPanel"
            class="translate-y-full fixed top-0 left-0 z-50 box-content h-screen w-screen lg:translate-y-0 flex-col lg:rounded-xl bg-neutral-800 lg:sticky lg:top-5 flex lg:h-[calc(100vh-2.5rem)] lg:max-h-[1200px] lg:w-1/4 transition-all duration-500">
 
-        <div class="flex absolute top-3 right-3 justify-center items-center w-10 h-10 text-3xl bg-opacity-50 rounded-full backdrop-blur-sm cursor-pointer aspect-square bg-neutral-300 text-neutral-50  shadow-center lg:hidden z-20"
+        <div class="flex absolute top-3 right-3 justify-center items-center w-10 h-10 text-3xl bg-opacity-70 rounded-full backdrop-blur-sm cursor-pointer aspect-square bg-neutral-700 text-neutral-200  shadow-center lg:hidden z-20"
              id="closeButton">✕
         </div>
 
-        <div class="w-full bg-black rounded-none lg:rounded-t-xl h-full lg:shadow-inherit z-10">
+        <div class="w-full bg-black rounded-none lg:rounded-t-xl h-1/2 lg:shadow-inherit z-10">
           <div class="w-full flex justify-center pt-3 absolute">
             <img src="media/logo-alzar-blanco-solo.png" alt="Firma 'Alzar' en blanco de los creadores de la copa"
                  class="h-[140px]">
@@ -161,20 +172,20 @@
 
 
         <div
-             class="flex relative flex-col justify-between p-3 h-fit text-left lg:px-5 lg:py-3 bg-stone-200 rounded-t-xl rounded-b-none md:rounded-t-none md:rounded-b-xl rounded-xl">
-          <!-- 
-          <div>
-            <h1 class="text-5xl md:text-4xl italic font-titles mb-2">Copa Alzar</h1>
+             class="flex relative flex-col p-3 h-1/2 text-left lg:px-5 lg:py-3 bg-stone-200 rounded-t-xl rounded-b-none md:rounded-t-none md:rounded-b-xl rounded-xl justify-between">
 
-            <ul class="list-none text-base md:text-sm flex flex-col gap-1">
-              <li class="">Decantación en la copa</li>
-              <li class="">Cristal soplado a mano en Segovia
+          <div>
+            <!-- <h1 class="text-5xl md:text-4xl font-titles mb-2 uppercase">Copa Alzar</h1> -->
+
+            <ul class="list-none text-base  flex flex-col gap-1">
+              <li class="">𐄢 Decantación en la copa</li>
+              <li class="">𐄢 Cristal soplado a mano en Segovia
               </li>
-              <li class="">Apta para lavavajillas</li>
-              <li class="">Capacidad 300 ml</li>
+              <li class="">𐄢 Apta para lavavajillas</li>
+              <li class="">𐄢 Capacidad 300 ml</li>
 
             </ul>
-          </div> -->
+          </div>
 
           <div class="flex flex-col gap-2">
             <div class="flex flex-col text-center">
@@ -184,7 +195,7 @@
 
             <a
                href="https://buy.stripe.com/8wM4gV5dbb9H0DucMM"
-               class="p-2 w-full text-lg font-bold text-center rounded-lg cursor-pointer lg:p-3 lg:text-xl text-white bg-red-700  border-2 border-transparent transition hover:border-red-900 hover:bg-opacity-80">Adquirir</a>
+               class="p-3 w-full text-lg font-bold text-center rounded-lg cursor-pointer lg:p-3 lg:text-xl text-white bg-red-700 border border-transparent transition hover:border-red-900 hover:bg-opacity-80">Adquirir</a>
 
             <div class="flex flex-col gap-1 items-center w-full">
               <p class="text-sm text-gray-500">Métodos de pago aceptados:</p>
@@ -307,6 +318,87 @@
           </div>
 
         </div>
+
+        <div id="galeria"
+             class="flex relative flex-col gap-4 p-4 pb-10 w-full rounded-xl h-fit lg:gap-3 bg-stone-200 lg:p-5 lg:pb-10">
+          <h3 class="text-3xl uppercase font-titles text-left">Bocetos</h3>
+
+          <div
+               class="main-carousel h-[80vh] max-h-[600px]"
+               data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": false, "autoPlay": true, "imagesLoaded": true, "prevNextButtons": true}'>
+
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-1.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-2.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-3.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-4.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-5.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-6.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-7.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+            <div
+                 class="h-full carousel-cell"
+                 style="max-width: 500px; margin-right: 10px">
+              <img
+                   loading="lazy" src="media/boceto-8.jpeg"
+                   class="object-cover w-full h-full rounded-lg"
+                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
+            </div>
+
+
+          </div>
+        </div>
+
+
         <div
              id="presentacion"
              class="flex relative flex-col gap-4 p-4 w-full rounded-xl h-fit lg:gap-3 bg-stone-200 lg:p-5">
@@ -362,14 +454,7 @@
                    alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
             </div>
 
-            <div
-                 class="h-full carousel-cell"
-                 style="max-width: 500px; margin-right: 10px">
-              <img
-                   loading="lazy" src="media/boceto-2.jpeg"
-                   class="object-cover w-full h-full rounded-lg"
-                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
-            </div>
+
             <div
                  class="h-full carousel-cell"
                  style="max-width: 500px; margin-right: 10px">
@@ -378,14 +463,7 @@
                    class="object-cover w-full h-full rounded-lg"
                    alt="Copa sobre un mantel rojo con un servicio blanco y cuberteria de plata y una botella de vino en segundo plano" />
             </div>
-            <div
-                 class="h-full carousel-cell"
-                 style="max-width: 500px; margin-right: 10px">
-              <img
-                   loading="lazy" src="media/bocetp-1.jpeg"
-                   class="object-cover w-full h-full rounded-lg"
-                   alt="Copa entre cubiertos y elementos de servicio, con flores en el fondo." />
-            </div>
+
 
             <div
                  class="h-full carousel-cell"
@@ -479,7 +557,7 @@
 
             <div class="flex flex-col md:flex-row justify-center items-center w-full gap-4  ">
               <a href="tel:+34665705498"
-                 class="px-3 py-3 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center flex flex-col w-full">
+                 class="px-3 py-5 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center flex flex-col w-full">
                 <span class="font-bold">☎️ Teléfono</span>
                 <span class="">665
                   70 54 98</span></a>
@@ -493,7 +571,7 @@
                   70 54 98</span></a> -->
 
               <div
-                   class="px-3 py-3 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center hover:cursor-pointer flex flex-col w-full">
+                   class="px-3 py-5 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center hover:cursor-pointer flex flex-col w-full">
 
                 <span class="font-bold">📩 Email</span>
                 <script
@@ -502,7 +580,7 @@
             </div>
           </div>
 
-          <hr class="mt-3 mb-3 border-neutral-300">
+          <hr class="m-6 border-neutral-300">
 
           <div class="grid grid-cols-1 gap-5 justify-center items-center w-full md:grid-cols-3">
             <img loading="lazy"
@@ -511,12 +589,12 @@
                  class="h-[100px] object-contain w-fit mx-auto" />
 
             <div
-                 class="mx-auto w-full text-sm text-center max-w-72 lg:text-md">
-              <h4 class="font-bold">Patente registrada:</h4>
-              <p>Número de solicitud: U202130459</p>
-              <p>Titular: Jose Alberto Ortíz Cornejo</p>
+                 class="mx-auto w-full text-sm text-center max-w-72 lg:text-md  text-gray-500">
+              <h4>Patente registrada por:</h4>
+              <p class="font-bold">Miren Alazne Ballester Serrano y José Alberto Ortiz Cornejo</p>
+              <!-- <p>Titular: Jose Alberto Ortíz Cornejo</p>
               <p>Número de publicación: ES1266514</p>
-              <p>Fecha de expedición: 29/07/2021</p>
+              <p>Fecha de expedición: 29/07/2021</p> -->
             </div>
             <img loading="lazy"
                  src="media/logo-real.webp"
@@ -524,7 +602,7 @@
                  class="h-[100px] object-contain w-fit mx-auto" />
           </div>
 
-          <hr class="mt-3 mb-3 border-neutral-300">
+          <hr class="m-6 border-neutral-300">
 
 
           <p class="text-xs text-center text-gray-500">
