@@ -51,32 +51,35 @@
 
 
       <div
-           class="hidden md:block w-full h-full z-0 bg-[url('/media/fondo-desktop.png')]	bg-center	bg-opacity-100 bg-cover bg-no-repeat">
+           class="hidden md:block w-full h-full z-0 bg-[url('/media/fondo-desktop.png')]	bg-center	bg-opacity-100 bg-contain bg-no-repeat">
       </div>
 
 
       <div
-           class="md:hidden block w-full h-[70vh] z-0 bg-[url('/media/frontal2.webp')]	bg-center	bg-opacity-100 bg-cover bg-no-repeat">
+           class="md:hidden block w-full h-full z-0 bg-[url('/media/copa-photo-frontal-2.webp')]	bg-center	bg-opacity-100 bg-cover bg-no-repeat">
       </div>
 
       <div
 
-           class="flex flex-col gap-4 md:gap-6 z-20 absolute md:bottom-4 md:left-4 md:p-6 bottom-3 left-3 p-3 box-border text-white text-center bg-black bg-opacity-25 backdrop-blur-md rounded-2xl w-[calc(100%-24px)] md:w-fit">
-        <div class="flex  gap-3 items-start">
-          <img src="media/firma-blanca.png" alt="" class="md:h-[70px] h-[40px] w-auto object-contain">
-          <h1
-              class="text-4xl italic  md:text-7xl font-titles">
-            Copa Alzar</h1>
-        </div>
+           class="flex flex-col md:flex-row justify-between z-20 absolute md:p-6 top-0 md:bottom-0 md:top-auto left-0 md:items-end p-5 box-border text-white text-center w-full h-full md:h-fit  ">
 
-        <div class="flex flex-col gap-4 justify-start">
-          <p class=" max-w-[450px] md:text-xl text-base text-left">Única en el
-            mundo, su sistema patentado fusiona copa y decantador
-            en un diseño muy especial.</p>
-          <span
-                class="rounded-full transition-all w-fit h-fit bg-red-700 p-2 md:p-2 md:px-4 bg-opacity-70 opacity-100 backdrop-blur-md hover:opacity-60 shadow-center hover:cursor-pointer "
-                onclick="reduceControls()">Video de presentación ▶︎</span>
+        <div class="flex flex-col  gap-4 ">
+          <div class="flex gap-3 items-start">
+            <img src="media/firma-blanca.png" alt="" class="md:h-[70px] h-[40px] w-auto object-contain">
+            <h1
+                class="text-4xl italic  md:text-7xl font-titles">
+              Copa Alzar</h1>
+          </div>
+
+          <div class="flex flex-col gap-4 justify-start">
+            <p class=" max-w-[450px] md:text-xl text-base text-left">Única en el
+              mundo, su sistema patentado fusiona copa y decantador
+              en un diseño muy especial.</p>
+          </div>
         </div>
+        <span
+              class="rounded-full transition-all w-fit h-fit  p-2 px-4 bg-opacity-70 opacity-100 backdrop-blur-md hover:opacity-60 shadow-center hover:cursor-pointer text-white bg-neutral-700"
+              onclick="reduceControls()">Video ▶︎</span>
       </div>
 
 
@@ -84,7 +87,7 @@
     </div>
 
     <div
-         class="flex absolute right-3 bottom-5 invisible z-20 gap-3 justify-around items-center px-3 py-2 bg-opacity-60 rounded-full opacity-0 backdrop-blur-sm transition-all controls w-fit md:px-4 md:py-3 bg-neutral-300 text-neutral-50 shadow-center ">
+         class="flex absolute left-3 md:left-auto md:right-5 bottom-5 md:bottom-5 invisible z-20 gap-3 justify-around items-center px-3 py-2 bg-opacity-60 rounded-full opacity-0 backdrop-blur-sm transition-all controls w-fit h-10 md:px-4 md:py-3 bg-neutral-300 text-neutral-50 shadow-center ">
       <button loading="lazy" class="z-20 transition-all play size-5 "><img id="plays"
              src="assets/icons/play.svg"
              alt="Botón para parar o reanudar el video de presentación"
@@ -110,14 +113,14 @@
     </video>
 
 
-
-    <div class="absolute md:bottom-5 md:left-1/2 right-6 bottom-6 z-40 transition-all md:-translate-x-1/2 hover:opacity-60 w-10"
-         onclick="scrollStart()"><span id="scrollArrow"
-            class="flex justify-center items-center p-2 md:p-3 bg-opacity-70 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-neutral-700 text-neutral-200 shadow-center"><img
+    <div
+         class="absolute bottom-0 z-40 transition-all p-5 md:p-6 gap-3 right-3 md:right-auto md:left-1/2 md:-translate-x-1/2">
+      <span id="scrollArrow" onclick="scrollStart()"
+            class="flex justify-center items-center p-2 md:p-3 bg-opacity-70 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-red-700 text-neutral-200 shadow-center w-10"><img
              src="assets/icons/arrow.svg" alt="Flecha hacia abajo para desplazarse al contenido de la página"
              class="w-5 transition-all"></span>
     </div>
-    º
+
   </div>
 
 
@@ -546,7 +549,7 @@
 
         <div
              id="contacto"
-             class="flex relative flex-col gap-4 p-4 w-full rounded-xl h-fit lg:gap-3 bg-stone-200 lg:p-5">
+             class="flex relative flex-col gap-4 p-4 w-full rounded-xl h-fit lg:gap-3 bg-stone-200 lg:p-5 md:mb-0">
           <h3 class="text-3xl uppercase font-titles text-left">Contacto</h3>
 
           <!-- <p><span class="text-xl italic">Alazne Ballester Serrano</span></p> -->
@@ -590,11 +593,9 @@
 
             <div
                  class="mx-auto w-full text-sm text-center max-w-72 lg:text-md  text-gray-500">
-              <h4>Patente registrada por:</h4>
-              <p class="font-bold">Miren Alazne Ballester Serrano y José Alberto Ortiz Cornejo</p>
-              <!-- <p>Titular: Jose Alberto Ortíz Cornejo</p>
+              <p>Patente registrada por:<br>Miren Alazne Ballester Serrano y<br> José Alberto Ortiz Cornejo</p>
               <p>Número de publicación: ES1266514</p>
-              <p>Fecha de expedición: 29/07/2021</p> -->
+              <p>Fecha de expedición: 29/07/2021</p>
             </div>
             <img loading="lazy"
                  src="media/logo-real.webp"
