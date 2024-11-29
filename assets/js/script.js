@@ -23,23 +23,24 @@ var isPlayed = false;
 function reduceControls() {
   isPlayed = true;
   controls.classList.replace("opacity-0", "opacity-100");
-  poster.classList.replace("opacity-100", "opacity-0");
+  poster.classList.add("hidden");
+
+  document.querySelector('.presentacion').classList.add("hidden");
+  document.querySelector('.description').classList.add("hidden");
+  document.querySelector('.titulo').classList.replace("md:top-auto", "md:top-3");
   scrollArrow.classList.replace("opacity-100", "opacity-60");
   playPauseMedia();
-  setTimeout(function () {
-    poster.classList.add("hidden");
-  }, 1000);
 }
 
 
-function isDesktop() {
-  return window.innerWidth >= 1024;
-}
+// function isDesktop() {
+//   return window.innerWidth >= 1024;
+// }
 
-if (isDesktop()) {
-  // Your desktop-only function here
-  playPauseMedia()
-}
+// if (isDesktop()) {
+//   // Your desktop-only function here
+//   playPauseMedia()
+// }
 
 
 function playPauseMedia() {
@@ -59,7 +60,12 @@ function stopMedia() {
   media.currentTime = 0;
   isPlaying = false;
 }
-media.addEventListener("ended", stopMedia);
+
+function scrollInside() {
+  stopMedia()
+  document.getElementById('contenido').scrollIntoView({ behavior: 'smooth' });
+}
+media.addEventListener("ended", scrollInside);
 
 function setTime() {
   const barLength =
