@@ -42,9 +42,11 @@
 </head>
 
 <body class="bg-gradient-to-b from-red-700 to-red-950 selection:text-white selection:bg-red-800">
+
+
   <div
-       class="player lg:h-[calc(100vh)] mb-3 lg:mb-5 object-cover relative overflow-hidden z-40 
-       h-[calc(100svh)] bg-black ">
+       class="player h-[calc(100vh-90px)] md:h-[calc(100vh-40px)] mb-3 lg:mb-5 object-cover relative overflow-hidden z-30 
+        bg-black rounded-xl m-3 md:m-5">
 
     <div id="poster"
          class="absolute top-0 left-0 z-30 w-full h-[calc(100svh)] opacity-100 transition-all duration-700">
@@ -61,25 +63,26 @@
 
       <div
 
-           class="flex flex-col md:flex-row justify-between z-20 absolute md:p-6 top-0 md:bottom-0 md:top-auto left-0 md:items-end p-5 box-border text-white text-center w-full h-full md:h-fit  ">
+           class="flex flex-col box-border text-white absolute top-0 left-0 gap-5 m-10 ">
 
-        <div class="flex flex-col  gap-4 ">
+        <div class="flex flex-col gap-4 ">
           <div class="flex gap-3 items-start">
             <img src="media/firma-blanca.png" alt="" class="md:h-[70px] h-[40px] w-auto object-contain">
             <h1
-                class="text-4xl italic  md:text-7xl font-titles">
+                class="text-4xl italic md:text-7xl font-titles">
               Copa Alzar</h1>
           </div>
 
           <div class="flex flex-col gap-4 justify-start">
-            <p class=" max-w-[450px] md:text-xl text-base text-left">Única en el
+            <p class=" max-w-[450px] text-base text-left">Única en el
               mundo, su sistema patentado fusiona copa y decantador
               en un diseño muy especial.</p>
           </div>
         </div>
+
         <span
-              class="rounded-full transition-all w-fit h-fit  p-2 px-4 bg-opacity-70 opacity-100 backdrop-blur-md hover:opacity-60 shadow-center hover:cursor-pointer text-white bg-neutral-700"
-              onclick="reduceControls()">Video ▶︎</span>
+              class="rounded-full transition-all w-fit h-fit p-1 px-4 bg-opacity-70 opacity-100 backdrop-blur-md hover:opacity-60 shadow-center hover:cursor-pointer text-white bg-neutral-700"
+              onclick="reduceControls()">Presentación en video ▷</span>
       </div>
 
 
@@ -87,7 +90,7 @@
     </div>
 
     <div
-         class="flex absolute left-3 md:left-auto md:right-5 bottom-5 md:bottom-5 invisible z-20 gap-3 justify-around items-center px-3 py-2 bg-opacity-60 rounded-full opacity-0 backdrop-blur-sm transition-all controls w-fit h-10 md:px-4 md:py-3 bg-neutral-300 text-neutral-50 shadow-center ">
+         class="flex absolute left-3 md:left-auto right-3 bottom-3 invisible z-20 gap-4 justify-around items-center px-4 py-1 bg-opacity-70 rounded-full opacity-0 backdrop-blur-sm transition-all controls w-fit h-10 md:px-4 md:py-3 bg-neutral-700 text-white shadow-center ">
       <button loading="lazy" class="z-20 transition-all play size-5 "><img id="plays"
              src="assets/icons/play.svg"
              alt="Botón para parar o reanudar el video de presentación"
@@ -102,7 +105,7 @@
              class="object-contain h-full hover:opacity-60"></button>
       <div
            class="overflow-hidden absolute bottom-0 left-0 z-0 w-full h-full rounded-full timer">
-        <div class="absolute left-0 z-0 w-0 h-full bg-neutral-800 bg-opacity-30"></div>
+        <div class="absolute left-0 z-0 w-0 h-full bg-neutral-200 bg-opacity-30"></div>
       </div>
     </div>
 
@@ -114,9 +117,9 @@
 
 
     <div
-         class="absolute bottom-0 z-40 transition-all p-5 md:p-6 gap-3 right-3 md:right-auto md:left-1/2 md:-translate-x-1/2">
+         class="absolute bottom-0 z-40 transition-all p-3 md:p-4 left-1/2 -translate-x-1/2">
       <span id="scrollArrow" onclick="scrollStart()"
-            class="flex justify-center items-center p-2 md:p-3 bg-opacity-70 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-red-700 text-neutral-200 shadow-center w-10"><img
+            class="flex justify-center items-center p-2 md:p-3 rounded-full opacity-100 backdrop-blur-md transition-all cursor-pointer aspect-square bg-red-700 text-neutral-200 shadow-center w-10"><img
              src="assets/icons/arrow.svg" alt="Flecha hacia abajo para desplazarse al contenido de la página"
              class="w-5 transition-all"></span>
     </div>
@@ -231,7 +234,7 @@
              id="presentacion"
              class="flex relative flex-col gap-4 p-4 w-full rounded-xl h-fit lg:gap-3 bg-stone-200 lg:p-5">
 
-          <h3 class="text-3xl uppercase font-titles text-left">Presentación</h3>
+          <h3 class="text-3xl uppercase font-titles text-left">La Copa Alzar</h3>
 
           <div class="flex flex-col gap-6 items-center mb-3 md:flex-row">
             <img loading="lazy"
@@ -288,8 +291,8 @@
 
           <div class="flex flex-col gap-5 md:flex-row">
             <div
-                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300 hover:scale-105">
-              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">I</span>
+                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300">
+              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">1.</span>
               <img loading="lazy" src="media/explicacion-1.webp" class="mb-2 rounded-t-lg"
                    alt="Un zoom sobre el decantador con unos posos naranjas en su interior" />
               <p class="px-4">
@@ -299,8 +302,8 @@
               </p>
             </div>
             <div
-                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300 hover:scale-105">
-              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">II</span>
+                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300">
+              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">2.</span>
               <img loading="lazy" src="media/explicacion-2.webp" class="mb-2 rounded-t-lg"
                    alt="Un zoom sobre una copa inclinandose" />
               <p class="px-4">
@@ -310,8 +313,8 @@
             </div>
 
             <div
-                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300 hover:scale-105">
-              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">III</span>
+                 class="pb-3 mx-auto max-w-xl text-neutral-800 rounded-lg transition duration-500 bg-neutral-300">
+              <span class="absolute mt-1 ml-3 text-sm text-neutral-300  font-titles">3.</span>
               <img loading="lazy" src="media/explicacion-3.webp" class="mb-2 rounded-t-lg"
                    alt="Vista 3D de la copa decantadora" />
               <p class="px-4">
@@ -561,7 +564,7 @@
             <div class="flex flex-col md:flex-row justify-center items-center w-full gap-4  ">
               <a href="tel:+34665705498"
                  class="px-3 py-5 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center flex flex-col w-full">
-                <span class="font-bold">☎️ Teléfono</span>
+                <span class="font-bold uppercase">Teléfono</span>
                 <span class="">665
                   70 54 98</span></a>
 
@@ -576,7 +579,7 @@
               <div
                    class="px-3 py-5 text-base rounded-lg border border-transparent transition bg-neutral-300 hover:border-neutral-400 hover:bg-opacity-60 text-center hover:cursor-pointer flex flex-col w-full">
 
-                <span class="font-bold">📩 Email</span>
+                <span class="font-bold uppercase">Email</span>
                 <script
                         type="text/javascript">var email = "contacto", domain = "copa-alzar.com", text = "contacto@copa-alzar.com"; document.write("<a href=javascript:location='" + "mail" + "to:" + email + "@" + domain + "' class=''>" + text + "</a>");</script>
               </div>

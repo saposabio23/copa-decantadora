@@ -31,6 +31,17 @@ function reduceControls() {
   }, 1000);
 }
 
+
+function isDesktop() {
+  return window.innerWidth >= 1024;
+}
+
+if (isDesktop()) {
+  // Your desktop-only function here
+  playPauseMedia()
+}
+
+
 function playPauseMedia() {
   if (media.paused) {
     plays.src = "assets/icons/pause.svg";
